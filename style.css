@@ -488,7 +488,11 @@ span{
     color: var(--second-bg-color);
 }
 
-/*RESPONSIVE */
+/*<-----------------------------------RESPONSIVE -------------------------------------------------------->*/
+
+
+
+
 @media(max-width: 1200px){
     html{
         font-size: 55%;
@@ -551,6 +555,7 @@ span{
 
     .home{
         flex-direction: column;
+        justify-content: space-around;
     }
 
     .home-content h3{
@@ -560,12 +565,23 @@ span{
     .home-content h1{
         font-size: 5rem;   
     }
+    .home-content{
+        margin-bottom: 0%;
+    }
 
     .home-img{
-        transform: scale(1.7);
-        position: relative;
-        top: -2vmin;   
+        min-width: 50rem;
+        display: flex;
+        justify-content: center;
+        margin: 10rem;
+        
     }
+    .home-img img{
+        min-width: 40rem;
+        /* position: relative;
+        top: -200vmin;  */
+        
+    } 
 
     /*about*/
 
@@ -574,7 +590,7 @@ span{
     }
 
     .about img{
-        transform: scale(1.7);
+        transform: scale(1.2);
         position: relative;
         bottom: 2vmin;
         border: 15px solid var(--main-color); 
@@ -582,7 +598,7 @@ span{
     }
 
     .about-img img:hover{
-        transform: scale(1.9);
+        transform: scale(1.4);
         box-shadow: none;
         cursor: default;
     }
@@ -608,19 +624,26 @@ span{
     }
 
     .home-img{
-        transform: scale(1.7);
-        position: relative;
-        top: -2vmin;   
+        min-width: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .home-img img{
+        min-width: 40rem;
+        /* position: relative;
+        top: -200vmin;  */
+        
+    } 
 
     .about img{
-        transform: scale(2);
+        transform: scale(1.4);
         margin-bottom: 20%;
         border: 10px solid var(--main-color);
-        box-shadow: 0 0 10px var(--main-color);  
+        box-shadow: 0 0 15px var(--main-color);  
     }
     .about-img img:hover{
-        transform: scale(2.2);
+        transform: scale(1.7);
         box-shadow: none;
         cursor: default;
     }
@@ -636,6 +659,31 @@ span{
     .contact form .input-box{
         width: 100%;;
     }
+    .home-img{
+        min-width: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-img img{
+        min-width: 40rem;
+        /* position: relative;
+        top: -200vmin;  */
+        
+    }
+    
+    .about img{
+        transform: scale(1.7);
+        border: 10px solid var(--main-color);
+    }
+
+    .about-img img:hover{
+        transform: scale(1.9);
+        box-shadow: none;
+        cursor: default;
+    }
+
+
 
 }
 
@@ -648,5 +696,26 @@ span{
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+    .home-img{
+        min-width: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-img img{
+        min-width: 40rem;
+        /* position: relative;
+        top: -200vmin;  */
+        
+    }
+    .about img{
+        transform: scale(1.7);
+    }
+    
+    .about-img img:hover{
+        transform: scale(1.9);
+        box-shadow: none;
+        cursor: default;
     }
 }
